@@ -26,9 +26,104 @@ body{
 .container { 
     display: flex;
     align-items: center;
-    height: 60vh;
+    flex-direction: row;
+    height: 80vh;
     min-width: 375px;
     width: 1000px;
     background-color: var(--color-Red);
     background-image: url("../img/bg-intro-desktop.png");
+    padding: 70px;
+}
+
+.container-primary {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-family: var(--font-family-primary);
+}
+
+.container-primary .container-primary-escrita{
+    padding: 10px;
+}
+.container-primary h1{
+    font-family: var(--font-family-primary);
+    font-size: 36px;
+}
+
+.container-primary p{
+    font-family: var(--font-family-primary);
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.container-secury{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family-primary);
+    width: 100%;
+    height: 100%;
+    margin: 30px;   
+}
+
+.container-secury-escrita {
+    font-size: 10px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: var(--color-Blue);
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.container-secury-formulario{
+    font-family: var(--font-family-primary);
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    border-radius: 10px;
+}
+.container-secury-formulario input{
+    width: 100%;
+    padding: 13px;
+    font-size: 10px;
+    margin: 6px;
+    border: 0.5px solid var(--color-Grayish-Blue);
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.container-secury-formulario input::placeholder{
+    color: var(--color-Dark-Blue);
+    font-weight: 600;
+}
+
+.container-secury-formulario button{
+    width: 100%;
+    padding: 13px;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    background-color: var(--color-Green);
+    border: none;
+    font-size: 12px;
+    margin: 6px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.container-secury-formulario .attribution {
+    padding: 13px;
+    text-align: center;
+    color: var(--color-Grayish-Blue);
+    font-size: 8px;
+}
+.container-secury-formulario .attribution a {
+    color: var(--color-Red);
+    font-weight: 700;
+    
 }

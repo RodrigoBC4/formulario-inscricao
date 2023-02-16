@@ -7,17 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="/css/style.css">
   <title>Frontend Mentor | Intro component with sign up form</title>
-
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
+  <script src="js/script.js"></script>
 
 </head>
 
@@ -37,18 +27,13 @@
       </div>
       <div class="container-secury-formulario">
       <form  action="">
-        <input type="text" placeholder="First Name">
-
-        <input type="text" placeholder="Last Name">
-
-        <input type="email" placeholder="Email Address">
-
-        
-        <input type="password" placeholder="Password">
-        
+        <input type="text" placeholder="First Name" id="nome">
+        <input type="text" placeholder="Last Name" id="sobrenome">
+        <input type="email" placeholder="Email Address" id="email">
+        <input type="password" placeholder="Password" id="senha">
       </form>
       
-      <button>Claim your free trial </button>
+      <button type="button" onclick="formularioDados(this)">Claim your free trial </button>
       <p class="attribution">
         By clicking the button, you are agreeing to our <a href="#">Terms and Services</a>.
       </p>
